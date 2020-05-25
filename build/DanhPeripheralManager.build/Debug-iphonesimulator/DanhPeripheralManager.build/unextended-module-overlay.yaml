@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/danhtc/Library/Developer/Xcode/DerivedData/DanhPeripheralManager-gnbylxvsatuhccdchwocgfpcnrpp/Build/Products/Debug-iphonesimulator/DanhPeripheralManager.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/danhtc/Desktop/Projects/BLE/DanhPeripheralManager/build/DanhPeripheralManager.build/Debug-iphonesimulator/DanhPeripheralManager.build/unextended-module.modulemap",
+    }]
+  }]
+}

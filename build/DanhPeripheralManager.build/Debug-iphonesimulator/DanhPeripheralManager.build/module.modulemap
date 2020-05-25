@@ -1,0 +1,11 @@
+framework module DanhPeripheralManager {
+  umbrella header "DanhPeripheralManager.h"
+
+  export *
+  module * { export * }
+}
+
+module DanhPeripheralManager.Swift {
+    header "DanhPeripheralManager-Swift.h"
+    requires objc
+}

@@ -1,0 +1,464 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DanhPeripheralManagerDelegate"
+- "DanhPeripheralManager"
+provides-nominal:
+- "21DanhPeripheralManager0abC8DelegateP"
+- "21DanhPeripheralManagerAAC"
+provides-member:
+- ["21DanhPeripheralManager0abC8DelegateP", ""]
+- ["21DanhPeripheralManagerAAC", ""]
+provides-dynamic-lookup:
+- "peripheralManager"
+- "peripheralManagerDidStartAdvertising"
+- "peripheralManagerDidUpdateState"
+depends-top-level:
+- !private "!="
+- !private "??"
+- "AnyObject"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "CBATTRequest"
+- !private "CBAdvertisementDataLocalNameKey"
+- !private "CBAdvertisementDataServiceUUIDsKey"
+- !private "CBMutableCharacteristic"
+- !private "CBMutableService"
+- "CBPeripheralManager"
+- "CBPeripheralManagerDelegate"
+- "CBUUID"
+- "DanhPeripheralManager"
+- "DanhPeripheralManagerDelegate"
+- "Error"
+- "NSObject"
+- "StringLiteralType"
+- !private "print"
+depends-member:
+- !private ["So11CBAttributeC", "characteristics"]
+- !private ["So11CBAttributeC", "init"]
+- !private ["So22CBAttributePermissionsV", "readable"]
+- !private ["So22CBAttributePermissionsV", "writeable"]
+- !private ["So16CBCharacteristicC", "init"]
+- !private ["So26CBCharacteristicPropertiesV", "read"]
+- !private ["So26CBCharacteristicPropertiesV", "write"]
+- !private ["So9CBManagerC", "add"]
+- !private ["So9CBManagerC", "init"]
+- !private ["So9CBManagerC", "startAdvertising"]
+- !private ["So9CBManagerC", "state"]
+- ["So14CBManagerStateV", "poweredOff"]
+- ["So14CBManagerStateV", "poweredOn"]
+- ["So14CBManagerStateV", "resetting"]
+- ["So14CBManagerStateV", "unauthorized"]
+- ["So14CBManagerStateV", "unknown"]
+- ["So14CBManagerStateV", "unsupported"]
+- !private ["So23CBMutableCharacteristicC", "init"]
+- !private ["So16CBMutableServiceC", "characteristics"]
+- !private ["So16CBMutableServiceC", "init"]
+- !private ["So19CBPeripheralManagerC", "add"]
+- !private ["So19CBPeripheralManagerC", "init"]
+- !private ["So19CBPeripheralManagerC", "startAdvertising"]
+- !private ["So19CBPeripheralManagerC", "state"]
+- !private ["So27CBPeripheralManagerDelegateP", "CBAdvertisementDataLocalNameKey"]
+- !private ["So27CBPeripheralManagerDelegateP", "CBAdvertisementDataServiceUUIDsKey"]
+- !private ["So27CBPeripheralManagerDelegateP", "CBMutableCharacteristic"]
+- !private ["So27CBPeripheralManagerDelegateP", "CBMutableService"]
+- !private ["So27CBPeripheralManagerDelegateP", "CBPeripheralManager"]
+- !private ["So27CBPeripheralManagerDelegateP", "CBUUID"]
+- ["So27CBPeripheralManagerDelegateP", "DanhPeripheralManager"]
+- !private ["So27CBPeripheralManagerDelegateP", "UUIDCharateristicStr"]
+- !private ["So27CBPeripheralManagerDelegateP", "UUIDServiceStr"]
+- ["So27CBPeripheralManagerDelegateP", ""]
+- !private ["So27CBPeripheralManagerDelegateP", "addServices"]
+- !private ["So27CBPeripheralManagerDelegateP", "delegate"]
+- ["So27CBPeripheralManagerDelegateP", "init"]
+- ["So27CBPeripheralManagerDelegateP", "peripheralManager"]
+- ["So27CBPeripheralManagerDelegateP", "peripheralManagerDidStartAdvertising"]
+- ["So27CBPeripheralManagerDelegateP", "peripheralManagerDidUpdateState"]
+- ["So27CBPeripheralManagerDelegateP", "peripheralManagerIsReady"]
+- ["So27CBPeripheralManagerDelegateP", "peripheralManagerIsReadyToUpdateSubscribers"]
+- !private ["So27CBPeripheralManagerDelegateP", "print"]
+- !private ["So27CBPeripheralManagerDelegateP", "service"]
+- !private ["So27CBPeripheralManagerDelegateP", "startAdvertising"]
+- !private ["So9CBServiceC", "characteristics"]
+- !private ["So9CBServiceC", "init"]
+- !private ["So6CBUUIDC", "init"]
+- !private ["s7CVarArgP", "CBAdvertisementDataLocalNameKey"]
+- !private ["s7CVarArgP", "CBAdvertisementDataServiceUUIDsKey"]
+- !private ["s7CVarArgP", "CBMutableCharacteristic"]
+- !private ["s7CVarArgP", "CBMutableService"]
+- !private ["s7CVarArgP", "CBPeripheralManager"]
+- !private ["s7CVarArgP", "CBUUID"]
+- ["s7CVarArgP", "DanhPeripheralManager"]
+- !private ["s7CVarArgP", "UUIDCharateristicStr"]
+- !private ["s7CVarArgP", "UUIDServiceStr"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "add"]
+- !private ["s7CVarArgP", "addServices"]
+- !private ["s7CVarArgP", "characteristics"]
+- !private ["s7CVarArgP", "delegate"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "peripheralManager"]
+- ["s7CVarArgP", "peripheralManagerDidStartAdvertising"]
+- ["s7CVarArgP", "peripheralManagerDidUpdateState"]
+- ["s7CVarArgP", "peripheralManagerIsReady"]
+- ["s7CVarArgP", "peripheralManagerIsReadyToUpdateSubscribers"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "service"]
+- !private ["s7CVarArgP", "startAdvertising"]
+- !private ["s7CVarArgP", "state"]
+- !private ["s28CustomDebugStringConvertibleP", "CBAdvertisementDataLocalNameKey"]
+- !private ["s28CustomDebugStringConvertibleP", "CBAdvertisementDataServiceUUIDsKey"]
+- !private ["s28CustomDebugStringConvertibleP", "CBMutableCharacteristic"]
+- !private ["s28CustomDebugStringConvertibleP", "CBMutableService"]
+- !private ["s28CustomDebugStringConvertibleP", "CBPeripheralManager"]
+- !private ["s28CustomDebugStringConvertibleP", "CBUUID"]
+- ["s28CustomDebugStringConvertibleP", "DanhPeripheralManager"]
+- !private ["s28CustomDebugStringConvertibleP", "UUIDCharateristicStr"]
+- !private ["s28CustomDebugStringConvertibleP", "UUIDServiceStr"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "add"]
+- !private ["s28CustomDebugStringConvertibleP", "addServices"]
+- !private ["s28CustomDebugStringConvertibleP", "characteristics"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "peripheralManager"]
+- ["s28CustomDebugStringConvertibleP", "peripheralManagerDidStartAdvertising"]
+- ["s28CustomDebugStringConvertibleP", "peripheralManagerDidUpdateState"]
+- ["s28CustomDebugStringConvertibleP", "peripheralManagerIsReady"]
+- ["s28CustomDebugStringConvertibleP", "peripheralManagerIsReadyToUpdateSubscribers"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "service"]
+- !private ["s28CustomDebugStringConvertibleP", "startAdvertising"]
+- !private ["s28CustomDebugStringConvertibleP", "state"]
+- !private ["s17CustomReflectableP", "add"]
+- !private ["s17CustomReflectableP", "startAdvertising"]
+- !private ["s23CustomStringConvertibleP", "CBAdvertisementDataLocalNameKey"]
+- !private ["s23CustomStringConvertibleP", "CBAdvertisementDataServiceUUIDsKey"]
+- !private ["s23CustomStringConvertibleP", "CBMutableCharacteristic"]
+- !private ["s23CustomStringConvertibleP", "CBMutableService"]
+- !private ["s23CustomStringConvertibleP", "CBPeripheralManager"]
+- !private ["s23CustomStringConvertibleP", "CBUUID"]
+- ["s23CustomStringConvertibleP", "DanhPeripheralManager"]
+- !private ["s23CustomStringConvertibleP", "UUIDCharateristicStr"]
+- !private ["s23CustomStringConvertibleP", "UUIDServiceStr"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "add"]
+- !private ["s23CustomStringConvertibleP", "addServices"]
+- !private ["s23CustomStringConvertibleP", "characteristics"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "peripheralManager"]
+- ["s23CustomStringConvertibleP", "peripheralManagerDidStartAdvertising"]
+- ["s23CustomStringConvertibleP", "peripheralManagerDidUpdateState"]
+- ["s23CustomStringConvertibleP", "peripheralManagerIsReady"]
+- ["s23CustomStringConvertibleP", "peripheralManagerIsReadyToUpdateSubscribers"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "service"]
+- !private ["s23CustomStringConvertibleP", "startAdvertising"]
+- !private ["s23CustomStringConvertibleP", "state"]
+- ["21DanhPeripheralManagerAAC", "CBATTRequest"]
+- !private ["21DanhPeripheralManagerAAC", "CBAdvertisementDataLocalNameKey"]
+- !private ["21DanhPeripheralManagerAAC", "CBAdvertisementDataServiceUUIDsKey"]
+- !private ["21DanhPeripheralManagerAAC", "CBMutableCharacteristic"]
+- !private ["21DanhPeripheralManagerAAC", "CBMutableService"]
+- ["21DanhPeripheralManagerAAC", "CBPeripheralManager"]
+- ["21DanhPeripheralManagerAAC", "CBUUID"]
+- ["21DanhPeripheralManagerAAC", "DanhPeripheralManager"]
+- ["21DanhPeripheralManagerAAC", "DanhPeripheralManagerDelegate"]
+- ["21DanhPeripheralManagerAAC", "Error"]
+- ["21DanhPeripheralManagerAAC", "UUIDCharateristicStr"]
+- ["21DanhPeripheralManagerAAC", "UUIDServiceStr"]
+- ["21DanhPeripheralManagerAAC", "addServices"]
+- ["21DanhPeripheralManagerAAC", "deinit"]
+- ["21DanhPeripheralManagerAAC", "delegate"]
+- ["21DanhPeripheralManagerAAC", "init"]
+- ["21DanhPeripheralManagerAAC", "peripheralManager"]
+- ["21DanhPeripheralManagerAAC", "peripheralManagerDidStartAdvertising"]
+- ["21DanhPeripheralManagerAAC", "peripheralManagerDidUpdateState"]
+- ["21DanhPeripheralManagerAAC", "peripheralManagerIsReady"]
+- ["21DanhPeripheralManagerAAC", "peripheralManagerIsReadyToUpdateSubscribers"]
+- !private ["21DanhPeripheralManagerAAC", "print"]
+- !private ["21DanhPeripheralManagerAAC", "service"]
+- ["21DanhPeripheralManagerAAC", "shared"]
+- ["21DanhPeripheralManagerAAC", "startAdvertising"]
+- ["21DanhPeripheralManagerAAC", "startPeripheralManager"]
+- ["21DanhPeripheralManager0abC8DelegateP", "CBATTRequest"]
+- ["21DanhPeripheralManager0abC8DelegateP", "CBPeripheralManager"]
+- ["21DanhPeripheralManager0abC8DelegateP", "onPeripheralReceiveWrite"]
+- !private ["Se", "add"]
+- !private ["Se", "startAdvertising"]
+- !private ["SE", "add"]
+- !private ["SE", "startAdvertising"]
+- !private ["SQ", "CBAdvertisementDataLocalNameKey"]
+- !private ["SQ", "CBAdvertisementDataServiceUUIDsKey"]
+- !private ["SQ", "CBMutableCharacteristic"]
+- !private ["SQ", "CBMutableService"]
+- !private ["SQ", "CBPeripheralManager"]
+- !private ["SQ", "CBUUID"]
+- ["SQ", "DanhPeripheralManager"]
+- !private ["SQ", "UUIDCharateristicStr"]
+- !private ["SQ", "UUIDServiceStr"]
+- ["SQ", ""]
+- !private ["SQ", "add"]
+- !private ["SQ", "addServices"]
+- !private ["SQ", "characteristics"]
+- !private ["SQ", "delegate"]
+- ["SQ", "init"]
+- ["SQ", "peripheralManager"]
+- ["SQ", "peripheralManagerDidStartAdvertising"]
+- ["SQ", "peripheralManagerDidUpdateState"]
+- ["SQ", "peripheralManagerIsReady"]
+- ["SQ", "peripheralManagerIsReadyToUpdateSubscribers"]
+- ["SQ", "poweredOff"]
+- ["SQ", "poweredOn"]
+- !private ["SQ", "print"]
+- !private ["SQ", "read"]
+- !private ["SQ", "readable"]
+- ["SQ", "resetting"]
+- !private ["SQ", "service"]
+- !private ["SQ", "startAdvertising"]
+- !private ["SQ", "state"]
+- ["SQ", "unauthorized"]
+- ["SQ", "unknown"]
+- ["SQ", "unsupported"]
+- !private ["SQ", "write"]
+- !private ["SQ", "writeable"]
+- !private ["s25ExpressibleByArrayLiteralP", "read"]
+- !private ["s25ExpressibleByArrayLiteralP", "readable"]
+- !private ["s25ExpressibleByArrayLiteralP", "write"]
+- !private ["s25ExpressibleByArrayLiteralP", "writeable"]
+- !private ["s23ExpressibleByNilLiteralP", "add"]
+- !private ["s23ExpressibleByNilLiteralP", "startAdvertising"]
+- !private ["SH", "CBAdvertisementDataLocalNameKey"]
+- !private ["SH", "CBAdvertisementDataServiceUUIDsKey"]
+- !private ["SH", "CBMutableCharacteristic"]
+- !private ["SH", "CBMutableService"]
+- !private ["SH", "CBPeripheralManager"]
+- !private ["SH", "CBUUID"]
+- ["SH", "DanhPeripheralManager"]
+- !private ["SH", "UUIDCharateristicStr"]
+- !private ["SH", "UUIDServiceStr"]
+- ["SH", ""]
+- !private ["SH", "add"]
+- !private ["SH", "addServices"]
+- !private ["SH", "characteristics"]
+- !private ["SH", "delegate"]
+- ["SH", "init"]
+- ["SH", "peripheralManager"]
+- ["SH", "peripheralManagerDidStartAdvertising"]
+- ["SH", "peripheralManagerDidUpdateState"]
+- ["SH", "peripheralManagerIsReady"]
+- ["SH", "peripheralManagerIsReadyToUpdateSubscribers"]
+- ["SH", "poweredOff"]
+- ["SH", "poweredOn"]
+- !private ["SH", "print"]
+- ["SH", "resetting"]
+- !private ["SH", "service"]
+- !private ["SH", "startAdvertising"]
+- !private ["SH", "state"]
+- ["SH", "unauthorized"]
+- ["SH", "unknown"]
+- ["SH", "unsupported"]
+- !private ["So9NSCopyingP", "init"]
+- ["So8NSObjectC", "CBATTRequest"]
+- !private ["So8NSObjectC", "CBAdvertisementDataLocalNameKey"]
+- !private ["So8NSObjectC", "CBAdvertisementDataServiceUUIDsKey"]
+- !private ["So8NSObjectC", "CBMutableCharacteristic"]
+- !private ["So8NSObjectC", "CBMutableService"]
+- ["So8NSObjectC", "CBPeripheralManager"]
+- ["So8NSObjectC", "CBUUID"]
+- ["So8NSObjectC", "DanhPeripheralManager"]
+- ["So8NSObjectC", "DanhPeripheralManagerDelegate"]
+- ["So8NSObjectC", "Error"]
+- ["So8NSObjectC", "UUIDCharateristicStr"]
+- ["So8NSObjectC", "UUIDServiceStr"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "add"]
+- ["So8NSObjectC", "addServices"]
+- !private ["So8NSObjectC", "characteristics"]
+- ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "peripheralManager"]
+- ["So8NSObjectC", "peripheralManagerDidStartAdvertising"]
+- ["So8NSObjectC", "peripheralManagerDidUpdateState"]
+- ["So8NSObjectC", "peripheralManagerIsReady"]
+- ["So8NSObjectC", "peripheralManagerIsReadyToUpdateSubscribers"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "service"]
+- ["So8NSObjectC", "shared"]
+- ["So8NSObjectC", "startAdvertising"]
+- ["So8NSObjectC", "startPeripheralManager"]
+- !private ["So8NSObjectC", "state"]
+- !private ["So8NSObjectP", "CBAdvertisementDataLocalNameKey"]
+- !private ["So8NSObjectP", "CBAdvertisementDataServiceUUIDsKey"]
+- !private ["So8NSObjectP", "CBMutableCharacteristic"]
+- !private ["So8NSObjectP", "CBMutableService"]
+- !private ["So8NSObjectP", "CBPeripheralManager"]
+- !private ["So8NSObjectP", "CBUUID"]
+- ["So8NSObjectP", "DanhPeripheralManager"]
+- !private ["So8NSObjectP", "UUIDCharateristicStr"]
+- !private ["So8NSObjectP", "UUIDServiceStr"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "add"]
+- !private ["So8NSObjectP", "addServices"]
+- !private ["So8NSObjectP", "characteristics"]
+- !private ["So8NSObjectP", "delegate"]
+- ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "peripheralManager"]
+- ["So8NSObjectP", "peripheralManagerDidStartAdvertising"]
+- ["So8NSObjectP", "peripheralManagerDidUpdateState"]
+- ["So8NSObjectP", "peripheralManagerIsReady"]
+- ["So8NSObjectP", "peripheralManagerIsReadyToUpdateSubscribers"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "service"]
+- !private ["So8NSObjectP", "startAdvertising"]
+- !private ["So8NSObjectP", "state"]
+- !private ["s9OptionSetP", "read"]
+- !private ["s9OptionSetP", "readable"]
+- !private ["s9OptionSetP", "write"]
+- !private ["s9OptionSetP", "writeable"]
+- !private ["Sq", "add"]
+- !private ["Sq", "startAdvertising"]
+- ["SY", "poweredOff"]
+- ["SY", "poweredOn"]
+- !private ["SY", "read"]
+- !private ["SY", "readable"]
+- ["SY", "resetting"]
+- ["SY", "unauthorized"]
+- ["SY", "unknown"]
+- ["SY", "unsupported"]
+- !private ["SY", "write"]
+- !private ["SY", "writeable"]
+- !private ["s10SetAlgebraP", "read"]
+- !private ["s10SetAlgebraP", "readable"]
+- !private ["s10SetAlgebraP", "write"]
+- !private ["s10SetAlgebraP", "writeable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CBAdvertisementDataLocalNameKey"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CBAdvertisementDataServiceUUIDsKey"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CBMutableCharacteristic"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CBMutableService"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CBPeripheralManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CBUUID"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "DanhPeripheralManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UUIDCharateristicStr"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UUIDServiceStr"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "add"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addServices"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "characteristics"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "peripheralManager"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "peripheralManagerDidStartAdvertising"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "peripheralManagerDidUpdateState"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "peripheralManagerIsReady"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "peripheralManagerIsReadyToUpdateSubscribers"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "service"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startAdvertising"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "state"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CBAdvertisementDataLocalNameKey"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CBAdvertisementDataServiceUUIDsKey"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CBMutableCharacteristic"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CBMutableService"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CBPeripheralManager"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CBUUID"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DanhPeripheralManager"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UUIDCharateristicStr"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UUIDServiceStr"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "add"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addServices"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "characteristics"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "peripheralManager"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "peripheralManagerDidStartAdvertising"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "peripheralManagerDidUpdateState"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "peripheralManagerIsReady"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "peripheralManagerIsReadyToUpdateSubscribers"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "service"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "startAdvertising"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "state"]
+- !private ["s21_ObjectiveCBridgeableP", "add"]
+- !private ["s21_ObjectiveCBridgeableP", "startAdvertising"]
+depends-nominal:
+- !private "So11CBAttributeC"
+- !private "So22CBAttributePermissionsV"
+- !private "So16CBCharacteristicC"
+- !private "So26CBCharacteristicPropertiesV"
+- !private "So9CBManagerC"
+- "So14CBManagerStateV"
+- !private "So23CBMutableCharacteristicC"
+- !private "So16CBMutableServiceC"
+- !private "So19CBPeripheralManagerC"
+- "So27CBPeripheralManagerDelegateP"
+- !private "So9CBServiceC"
+- !private "So6CBUUIDC"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "21DanhPeripheralManagerAAC"
+- "21DanhPeripheralManager0abC8DelegateP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- !private "So9NSCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "s9OptionSetP"
+- !private "Sq"
+- "SY"
+- !private "s10SetAlgebraP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/UIKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/danhtc/Desktop/Projects/BLE/DanhPeripheralManager/DanhPeripheralManager/DanhPeripheralManager.h"
+- "/Users/danhtc/Desktop/Projects/BLE/DanhPeripheralManager/build/DanhPeripheralManager.build/Debug-iphonesimulator/DanhPeripheralManager.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "dc9b2337512d87f4f1fea35b524aabdb"

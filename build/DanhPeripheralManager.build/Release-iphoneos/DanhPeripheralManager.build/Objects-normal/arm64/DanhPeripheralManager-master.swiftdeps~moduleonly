@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "b78f798720187182d95c5e44f6ef63d6"
+build_time: [1589718374, 296273000]
+inputs:
+  "/Users/danhtc/Desktop/Projects/BLE/DanhPeripheralManager/DanhPeripheralManager/Source/DanhPeripheralManager.swift": [9223372036, 854775807]

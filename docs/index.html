@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/DanhPeripheralManager.html">DanhPeripheralManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/DanhPeripheralManagerDelegate.html">DanhPeripheralManagerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='danh-peripheral-manager-framework' class='heading'>Danh Peripheral Manager Framework</h1>
+<h2 id='requirement' class='heading'>Requirement</h2>
+
+<ul>
+<li>Minimum IOS 10.3.</li>
+</ul>
+<h2 id='how-to-install' class='heading'>How to install</h2>
+
+<ul>
+<li>Create a new swift project.</li>
+<li>Drag and drop DanhPeripheralManager.swift to app.</li>
+<li><p>Open xcode:</p>
+
+<ul>
+<li>If you run  Xcode 11+ :
+
+<ul>
+<li>The only thing to do is to add the framework to the General-&gt;Frameworks, Libraries And Embedded Content section in the General tab of your app target.</li>
+<li>Make sure you select the &lsquo;Embed &amp; Sign&rsquo; option.</li>
+<li><a href="https://i.stack.imgur.com/ZuCyy.png">Image for xcode 11</a></li>
+</ul></li>
+<li>If you run Xcode v6 -&gt; Xcode v10 :
+
+<ul>
+<li>The only thing to do is to add the framework to the Embedded binaries section in the General tab of your app target.</li>
+<li><a href="https://i.stack.imgur.com/T4g6I.png">Image for xcode v6 -&gt; v10</a></li>
+</ul></li>
+</ul></li>
+<li><p>Open Info.plist:</p>
+
+<ul>
+<li>Add key NSBluetoothAlwaysUsageDescription.</li>
+<li>Add key NSBluetoothPeripheralUsageDescription.</li>
+</ul></li>
+</ul>
+<h2 id='how-to-work' class='heading'>How to work</h2>
+<h3 id='open-file-viewcontroller-swift' class='heading'>Open file ViewController.swift:</h3>
+
+<ul>
+<li>Add DanhPeripheralManagerDelegate to class ViewController:</li>
+</ul>
+<pre class="highlight swift"><code> <span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt">DanhPeripheralManagerDelegate</span>
+</code></pre>
+
+<ul>
+<li>Add protocol of DanhPeripheralManagerDelegate to class. In the protocol, you need parse value from bytes[] to String with utf-8 encoding.
+You can receive value RED or GREEN.</li>
+</ul>
+<pre class="highlight swift"><code> <span class="kd">func</span> <span class="nf">onPeripheralReceiveWrite</span><span class="p">(</span><span class="n">_</span> <span class="nv">peripheral</span><span class="p">:</span> <span class="kt">CBPeripheralManager</span><span class="p">,</span> <span class="n">didReceiveWrite</span> <span class="nv">requests</span><span class="p">:</span> <span class="p">[</span><span class="kt">CBATTRequest</span><span class="p">])</span> <span class="p">{</span>
+
+     <span class="k">if</span> <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">first</span><span class="p">?</span><span class="o">.</span><span class="n">value</span> <span class="p">{</span>
+         <span class="k">let</span> <span class="nv">myBytes</span> <span class="o">=</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">](</span><span class="n">value</span><span class="p">)</span>
+         <span class="k">let</span> <span class="nv">valueStr</span> <span class="o">=</span> <span class="kt">String</span><span class="p">(</span><span class="nv">bytes</span><span class="p">:</span> <span class="n">myBytes</span><span class="p">,</span> <span class="nv">encoding</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span>
+         <span class="k">if</span> <span class="p">(</span><span class="s">"RED"</span> <span class="o">==</span> <span class="n">valueStr</span><span class="p">)</span> <span class="p">{</span>
+             <span class="n">circleView</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">red</span>
+             <span class="kt">AudioServicesPlaySystemSound</span> <span class="p">(</span><span class="n">systemSoundID</span><span class="p">)</span>
+
+         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="s">"GREEN"</span> <span class="o">==</span> <span class="n">valueStr</span><span class="p">)</span> <span class="p">{</span>
+             <span class="n">circleView</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">green</span>
+             <span class="kt">AudioServicesPlaySystemSound</span> <span class="p">(</span><span class="n">systemSoundID</span><span class="p">)</span>
+
+         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+             <span class="n">circleView</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">gray</span>
+             <span class="kt">AudioServicesPlaySystemSound</span> <span class="p">(</span><span class="n">systemSoundID</span><span class="p">)</span>
+         <span class="p">}</span>
+     <span class="p">}</span>
+ <span class="p">}</span>
+</code></pre>
+
+<ul>
+<li><p>In func viewDidLoad(), call  startPeripheralManager method of the framework:</p>
+<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
+    <span class="kt">DanhPeripheralManager</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">startPeripheralManager</span><span class="p">(</span><span class="nv">newDelegate</span><span class="p">:</span> <span class="k">self</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></li>
+</ul>
+<h2 id='feedback' class='heading'>Feedback</h2>
+
+<p>If you like the framework, please send email <a href="mailto:trandanh882006@gmail.com">trandanh882006@gmail.com</a> to info me.</p>
+
+<p>And if you don’t like it, please also let me know what you would like improved, so I can fix it!</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-05-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

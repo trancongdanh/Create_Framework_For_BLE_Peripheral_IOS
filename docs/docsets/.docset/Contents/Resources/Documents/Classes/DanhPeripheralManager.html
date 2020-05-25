@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DanhPeripheralManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/DanhPeripheralManager" class="dashAnchor"></a>
+    <a title="DanhPeripheralManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DanhPeripheralManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DanhPeripheralManager.html">DanhPeripheralManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DanhPeripheralManagerDelegate.html">DanhPeripheralManagerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DanhPeripheralManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">DanhPeripheralManager</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">CBPeripheralManagerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <h1 id='overview' class='heading'>Overview</h1>
+
+<p>The class likes a BLE Peripheral (you can think it as a server in socket programming), having a characteristic to receive the data. If it receives &ldquo;RED&rdquo;, turn the LED (the circle in the middle of the app) to RED, if it receives &ldquo;GREEN&rdquo;, turn the LED to green, otherwise let&rsquo;s the LED grey.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21DanhPeripheralManagerAAC6sharedABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21DanhPeripheralManagerAAC6sharedABvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Only one instance of class DanhPeripheralManager is running in app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">DanhPeripheralManager</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21DanhPeripheralManagerAAC05startbC011newDelegateyAA0abcF0_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/startPeripheralManager(newDelegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21DanhPeripheralManagerAAC05startbC011newDelegateyAA0abcF0_p_tF">startPeripheralManager(newDelegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Init, start  the peripheral manager of CoreBluetooth and set delegate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startPeripheralManager</span><span class="p">(</span><span class="nv">newDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DanhPeripheralManagerDelegate.html">DanhPeripheralManagerDelegate</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>set delegate to callback</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Void</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CBPeripheralManagerDelegate"></a>
+                <a name="//apple_ref/swift/Section/CBPeripheralManagerDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/CBPeripheralManagerDelegate"></a>
+                  <h3 class="section-name"><p>CBPeripheralManagerDelegate</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@DanhPeripheralManager@objc(cs)DanhPeripheralManager(im)peripheralManagerDidUpdateState:"></a>
+                    <a name="//apple_ref/swift/Method/peripheralManagerDidUpdateState(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@DanhPeripheralManager@objc(cs)DanhPeripheralManager(im)peripheralManagerDidUpdateState:">peripheralManagerDidUpdateState(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate the peripheral manager’s state updated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">peripheralManagerDidUpdateState</span><span class="p">(</span><span class="n">_</span> <span class="nv">peripheral</span><span class="p">:</span> <span class="kt">CBPeripheralManager</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>peripheral</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The peripheral manager whose state has changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@DanhPeripheralManager@objc(cs)DanhPeripheralManager(im)peripheralManager:didReceiveWriteRequests:"></a>
+                    <a name="//apple_ref/swift/Method/peripheralManager(_:didReceiveWrite:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@DanhPeripheralManager@objc(cs)DanhPeripheralManager(im)peripheralManager:didReceiveWriteRequests:">peripheralManager(_:<wbr>didReceiveWrite:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate that a local peripheral device received an Attribute Protocol (ATT) write request for a characteristic with a dynamic value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">peripheralManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">peripheral</span><span class="p">:</span> <span class="kt">CBPeripheralManager</span><span class="p">,</span> <span class="n">didReceiveWrite</span> <span class="nv">requests</span><span class="p">:</span> <span class="p">[</span><span class="kt">CBATTRequest</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>peripheral</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The peripheral manager that received the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requests</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A list of one or more CBATTRequest objects, each representing a request to write the value of a characteristic.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@DanhPeripheralManager@objc(cs)DanhPeripheralManager(im)peripheralManagerDidStartAdvertising:error:"></a>
+                    <a name="//apple_ref/swift/Method/peripheralManagerDidStartAdvertising(_:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@DanhPeripheralManager@objc(cs)DanhPeripheralManager(im)peripheralManagerDidStartAdvertising:error:">peripheralManagerDidStartAdvertising(_:<wbr>error:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate the peripheral manager started advertising the local peripheral device’s data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">peripheralManagerDidStartAdvertising</span><span class="p">(</span><span class="n">_</span> <span class="nv">peripheral</span><span class="p">:</span> <span class="kt">CBPeripheralManager</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>peripheral</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The peripheral manager adding the service.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The reason the call failed, or nil if no error occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-05-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
